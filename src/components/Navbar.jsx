@@ -1,11 +1,10 @@
-import React from 'react';
 import logo from '../assets/logo2.jpg';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 
-export default function NavigationBar() {
+function NavigationBar() {
   return (
     <Nav variant='pills' defaultActiveKey="/home">
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
@@ -16,16 +15,13 @@ export default function NavigationBar() {
               <Nav className='justify.content-center' activeKey= "/home">
                   <Nav className="me-auto">
                     <Nav.Item>
-                      <Nav.Link link to="/inicio" href="#Inicio">Inicio</Nav.Link>
+                      <Nav.Link link to="" href="/">Inicio</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>  
-                      <Nav.Link  link to="/VerTickets" href="#VerTickets">Ver tickets</Nav.Link>
+                      <Nav.Link  link to="/" href="contact">Contacto</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link  link to="/CrearTicket" href="#CrearTicket">Crear Ticket</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link href="#Login">Iniciar Sesión</Nav.Link>
+                      <Nav.Link  link to="/" href="about">Sobre Nosotros</Nav.Link>
                     </Nav.Item>
                   </Nav>
               </Nav>
@@ -45,3 +41,4 @@ export default function NavigationBar() {
   );
 }
 
+export default NavigationBar
